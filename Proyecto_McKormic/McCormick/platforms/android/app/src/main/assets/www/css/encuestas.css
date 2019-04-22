@@ -1,0 +1,48 @@
+.contenedor{
+    width: 100%;
+}
+
+.contenido {
+    width: 90%;
+}
+
+h1{
+    text-align: center;
+    color: #07549c;
+    font-size: 25px;
+}
+
+.lista{
+    width: 90%;
+    padding: 2%;
+}
+
+.lista .item{
+    display: flex;
+    margin-top: 6%;
+    width: 100%;
+    padding: 2%;
+    border: 1px solid gray;
+}
+
+.lista .item .icono img{
+    width: 60%;
+    margin: 0;
+    display: block;
+}
+.lista .item .icono{
+    width: 15%;
+    margin: 0;
+}
+
+.lista .item .texto{
+    color: gray;
+    margin: 0;
+    margin-top: 2%;
+    margin-left: 3%;
+    width: 60%;
+}
+
+.item:focus{
+    border: 1px solid red;
+}

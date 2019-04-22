@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/mccormick.css">
+    <link rel="stylesheet" href="../css/sincronizacion.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="contenido">
+            <div class="logo">
+                <img src="../img/logo.png">
+            </div>
+            <h1>Enviando Encuesta</h1>
+            <div class="icono">
+                <img src="../img/icono.png">
+            </div>
+            <div class="carga">
+                <div id="progreso" class="progreso"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../cordova.js"></script>
+    <script>
+        let app = {
+            init:function(){
+                    var progreso = document.getElementById('progreso');
+                    // setInterval(()=>{
+                    //     progreso.style.width = "100%";  
+                    //     setInterval(window.location = "localidad.html",1000);
+                    // },4000);
+                    for(i=0 ; i<100 ; ){
+                        setInterval((progreso.style.width = i+"%",i++),4000);
+                    }
+                    window.location = "localidad.html";
+                }
+        };
+
+        document.addEventListener('deviceready',app.init);
+    </script>
+</body>
+
+</html>

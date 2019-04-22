@@ -1,0 +1,82 @@
+@font-face {
+    font-family: McCormick;
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+* {
+    font-family: McCormick;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.barra {
+    width: 100%;
+    height: 75px;
+    background: rgb(247, 36, 36);
+    z-index: 1;
+}
+
+*:focus {
+    outline: none;
+}
+
+.cliente {
+    z-index: 2;
+    margin-top: -12%;
+    display: flex;
+}
+
+.cliente a:last-child {
+    border-bottom: 1px solid white;
+}
+
+.cliente .logo {
+    margin: 0;
+    margin-top: -4%;
+    width: 20%;
+}
+
+.cliente .logo img {
+    width: 90%;
+    display: block;
+}
+
+.cliente .texto {
+    color: white;
+    text-align: right;
+    margin: 0;
+    margin-left: 32%;
+    width: 47%;
+
+}
+
+.encuesta {
+    display: flex;
+    width: 40%;
+    margin: 3% 0% 15% 0%;
+}
+
+.encuesta  .numero {
+    width: 17%;
+    margin: 4.5% 1% 0% 0%;
+}
+
+.encuesta .texto {
+    width: 80%;
+    color: #07549c;
+    font-size: 13px;
+}
+
+.texto p:first-child {
+    width: 60%;
+    margin: 0;
+}
+
+.texto p {
+    display: block;
+    border-bottom: 1px solid;
+}
