@@ -65,7 +65,10 @@
     </div>
     <script src="../cordova.js"></script>
     <script>
-        
+        var encuestas = Array.from(document.getElementsByClassName('item'));
+        encuestas.map((e)=>{
+            e.addEventListener('click',() => window.location = "encuesta.html");
+        });
     </script>
 </body>
 

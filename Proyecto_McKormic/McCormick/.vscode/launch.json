@@ -5,6 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Simulate android in browser",
+            "type": "cordova",
+            "request": "launch",
+            "platform": "android",
+            "target": "chrome",
+            "simulatePort": 8000,
+            "livereload": true,
+            "cwd": "${workspaceFolder}",
+            "sourceMaps": true
+        },
+        {
             "name": "Run Android on device",
             "type": "cordova",
             "request": "launch",
@@ -76,17 +87,6 @@
             "devServerAddress": "localhost",
             "sourceMaps": true,
             "ionicLiveReload": true
-        },
-        {
-            "name": "Simulate Android in browser",
-            "type": "cordova",
-            "request": "launch",
-            "platform": "android",
-            "target": "chrome",
-            "simulatePort": 8000,
-            "livereload": true,
-            "sourceMaps": true,
-            "cwd": "${workspaceFolder}"
         },
         {
             "name": "Simulate iOS in browser",

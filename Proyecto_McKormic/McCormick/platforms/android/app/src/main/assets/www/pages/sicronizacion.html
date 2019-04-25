@@ -28,20 +28,20 @@
     <script src="../cordova.js"></script>
     <script>
         let app = {
-            init:function(){
-                    var progreso = document.getElementById('progreso');
-                    // setInterval(()=>{
-                    //     progreso.style.width = "100%";  
-                    //     setInterval(window.location = "localidad.html",1000);
-                    // },4000);
-                    for(i=0 ; i<100 ; ){
-                        setInterval((progreso.style.width = i+"%",i++),4000);
+            init: function () {
+                var progreso = document.getElementById('progreso');
+                var i = 0;
+                setInterval(()=>{
+                    ( i+=10,progreso.style.width = i + "%")
+                    if(i == 100){
+                        window.location = "localidad.html";
                     }
-                    window.location = "localidad.html";
-                }
+                }, 100);
+
+            }
         };
 
-        document.addEventListener('deviceready',app.init);
+        document.addEventListener('deviceready', app.init);
     </script>
 </body>
 

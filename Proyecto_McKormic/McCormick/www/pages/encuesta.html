@@ -46,23 +46,116 @@
             <div class="secciones">
                 <div class="seccion">
                     <div class="header">
-                        <div class="texto">Seccion 1</div>
-                        <div class="icono">
-                            <img src="../img/down.svg">
+                        <div class="texto">Sección 1</div>
+                        <div class="marcar">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Marcar todos iguales
+                            </label>
+                        </div>
+                        <div class="marcar">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Marcar todos iguales
+                            </label>
+                        </div>
+                        <div class="marcar">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Marcar todos iguales
+                            </label>
                         </div>
                     </div>
-                    <div class="campo">
-                        <div class="pregunta">Pregunta disponible</div>
-                        <div class="respuestas">
-                            <div class="respuesta">Si</div>
-                            <div class="respuesta">No</div>
-                            <div class="respuesta">N/A</div>
-                        </div>
+                    <div class="campos">
+                        <ol>
+                            <div class="campo">
+                                <div class="pregunta" id="pregunta">
+                                    <li value="1">Producto disponible en góndola</li>
+                                    <div class="ayuda"><img src="../img/help.svg">
+                                    </div>
+                                </div>
+                                <div id="respuestas">
+                                    <div class="respuesta select">Si</div>
+                                    <div class="respuesta">No</div>
+                                    <div class="respuesta">N/A</div>
+                                </div>
+                            </div>
+                            <div class="campo">
+                                <div class="pregunta" id="pregunta">
+                                    <li value="2">¿El precio es visible en el producto y en el embase?</li>
+                                    <div class="ayuda"><img src="../img/help.svg"></div>
+                                </div>
+                                <div id="respuestas">
+                                    <div class="respuesta">Si</div>
+                                    <div class="respuesta">No</div>
+                                    <div class="respuesta">N/A</div>
+                                </div>
+                            </div>
+                            <div class="campo">
+                                <div class="pregunta" id="pregunta">
+                                    <li value="3">¿El precio es correcto?</li>
+                                    <div class="ayuda"><img src="../img/help.svg"></div>
+                                </div>
+                                <div id="respuestas">
+                                    <div class="respuesta">Si</div>
+                                    <div class="respuesta">No</div>
+                                    <div class="respuesta">N/A</div>
+                                </div>
+                            </div>
+                            <div class="campo">
+                                <div class="pregunta" id="pregunta">
+                                    <li value="4">¿Hay promocion?</li>
+                                    <div class="ayuda"><img src="../img/help.svg"></div>
+                                </div>
+                                <div id="respuestas">
+                                    <div class="respuesta">Si</div>
+                                    <div class="respuesta">No</div>
+                                    <div class="respuesta">N/A</div>
+                                </div>
+                            </div>
+                            <div class="campo">
+                                <div class="pregunta" id="pregunta">
+                                    <li value="5">¿Hay promocion?</li>
+                                    <div class="ayuda"><img src="../img/help.svg"></div>
+                                </div>
+                                <div id="respuestas">
+                                    <div class="respuesta">Si</div>
+                                    <div class="respuesta">No</div>
+                                    <div class="respuesta">N/A</div>
+                                </div>
+                            </div>
+                            <div class="campo">
+                                <div class="pregunta" id="pregunta">
+                                    <li value="6">¿Hay promocion?</li>
+                                    <div class="ayuda"><img src="../img/help.svg"></div>
+                                </div>
+                                <div id="respuestas">
+                                    <div class="respuesta">Si</div>
+                                    <div class="respuesta">No</div>
+                                    <div class="respuesta">N/A</div>
+                                </div>
+                            </div>
+                        </ol>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        let app = {
+            init: function () {
+                var divs = Array.from(document.getElementsByClassName('pregunta'));
+                var max = 0;
+                divs.map((e) => {
+                    console.log(e.style.width)
+                });
+            }
+        };
+        document.addEventListener('deviceready',app.init());
+    </script>
 </body>
 
 </html>

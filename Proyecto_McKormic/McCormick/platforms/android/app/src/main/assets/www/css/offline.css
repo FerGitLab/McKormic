@@ -1,0 +1,37 @@
+.contenido{
+    color: rgb(73, 72, 72);
+    margin-top: 15%;
+    text-align: center;
+}
+
+.contenido h1{
+    color: #07549c;
+    margin-top: 8%;
+}
+
+.img{
+    width: 50%;
+}
+
+.img img{
+    width: 100%;
+}
+
+.logo {
+    margin-top: 3%;
+    width: 10%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.contenido a{
+    color: white;
+    border-radius: 19px;
+    display: block;
+    background: #07549c;
+    margin-top: 7%;
+    width: 15%;
+    padding: 2% 6% 2% 6%;
+}
